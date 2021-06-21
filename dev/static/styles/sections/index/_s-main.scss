@@ -1,0 +1,99 @@
+.main {
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 60px;
+	min-height: 650px;
+	overflow: hidden;
+	@media screen and (min-width: 480px) {
+		min-height: 800px;
+	}
+	@media screen and (min-width: 576px) {
+		min-height: 1024px;
+	}
+	@media screen and (min-width: 992px) {
+		display: block;
+		min-height: auto;
+	}
+	@media screen and (min-width: 1400px) {
+		display: block;
+		min-height: 100vh;
+	}
+	&__content {
+		@media screen and (min-width: 992px) {
+			margin-top: 140px;
+		}
+		@media screen and (min-width: 1400px) {
+			margin-top: 195px;
+		}
+	}
+	&-title {
+		margin-bottom: 15px;
+		max-width: 515px;
+		@include rem(32);
+		color: $white_color;
+		@media screen and (min-width: 576px) {
+			@include rem(48);
+		}
+		@media screen and (min-width: 992px) {
+			color: $black_color;
+		}
+		@media screen and (min-width: 1400px) {
+			max-width: 660px;
+			@include rem(64);
+		}
+	}
+	&-contacts {
+		position: relative;
+		display: inline-flex;
+		&::after {
+			content: '';
+			position: absolute;
+			left: calc(100% + 10px);
+			top: 50%;
+			transform: translateY(-50%);
+			@include size(1000px, 9px);
+			background-color: $accent_color;
+			border-radius: 25px;
+			@media screen and (min-width: 576px) {
+				left: calc(100% + 30px);
+			}
+			@media screen and (min-width: 992px) {
+				content: none;
+			}
+		}
+		& > *:not(:last-child) {
+			margin-right: 15px;
+			@media screen and (min-width: 576px) {
+				margin-right: 35px;
+			}
+		}
+		&__link {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			@include size(45px);
+			background-color: $white_color;
+			border-radius: 50%;
+			@media screen and (min-width: 576px) {
+				@include size(55px);
+			}
+			@media screen and (min-width: 992px) {
+				background-color: $black_color;
+			}
+		}
+		&__icon {
+			@include size(20px);	
+			fill: $teal_color;
+			@media screen and (min-width: 576px) {
+				@include size(32px);
+			}
+			@media screen and (min-width: 992px) {
+				fill: $white_color;
+			}
+		}
+	}
+}
+@keyframes play {
+   from { background-position:    0px 0px; }
+     to { background-position: 0px -31744px; }
+}

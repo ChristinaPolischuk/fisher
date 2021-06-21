@@ -1,0 +1,14 @@
+header.header 
+	.header__container.container
+		a.logo(href="#")
+			img.logo__img(src="static/images/general/logo.png", alt="Fisher") 
+		nav.header-menu 
+			a.header-menu__link(href="#") О нас
+			a.header-menu__link(href="#") Услуги
+			a.header-menu__link(href="#") Как работаем
+			a.header-menu__link(href="#") Кейсы
+			a.header-menu__link(href="#") Отзывы
+		a.header-phone(href="tel:+380950000000") 
+			+icon('phone-bordered', 'header-phone__icon')
+			span.header-phone__text 095 000 0000
+		+icon('burger', 'burger-menu') 

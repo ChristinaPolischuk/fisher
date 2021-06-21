@@ -1,0 +1,14 @@
+.btn {
+	height: 45px;
+	padding: 0 24px;
+	background-color: $accent_color;
+	border: none;
+	border-radius: 25px;
+	font-family: "Gilroy-Regular", Arial, sans-serif;
+	color: $white_color;
+	@media screen and (min-width: 576px) {
+		height: 55px;
+		@include rem(24);
+		border-radius: 33px;
+	}
+}

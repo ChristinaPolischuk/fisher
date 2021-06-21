@@ -1,0 +1,10 @@
+.slick-slider {
+	min-width: 0;
+}
+.slick-list {
+	overflow: hidden;
+}
+// Для вертикального слайдера надо display: block
+.slick-track {
+	display: flex;
+}

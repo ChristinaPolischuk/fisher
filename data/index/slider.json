@@ -1,0 +1,78 @@
+{
+	"slide1": {
+		"title": {
+			"line1": "Чугунная",
+			"line2": "кастрюля Staub"
+		},
+		"alt": "Чугунная кастрюля Staub",
+		"image": "staub",
+		"colorsTitle": "Цвета",
+		"colors": {
+			"black": {
+				"name": "Черный",
+				"code": "000000"
+			},
+			"cherry": {
+				"name": "Вишневый",
+				"code": "d93639"
+			},
+			"grey": {
+				"name": "Серый графит",
+				"code": "9a988c"
+			}
+		},
+		"parametersTitle": "Параметры",
+		"parameters": {
+			"diameter": {
+				"value": "30 см",
+				"icon": "size"
+			},
+			"amount": {
+				"value": "8.35 л",
+				"icon": "pot"
+			}
+		},
+		"btn": {
+			"href": "javascript:void(0);",
+			"text": "О кастрюле"
+		}
+	},
+	"slide2": {
+		"title": {
+			"line1": "Серия Black Star",
+			"line2": "P.L. Proff Cuisine"
+		},
+		"alt": "Серия Black Star P.L. Proff Cuisine",
+		"image": "Proff_Cuisine",
+		"colorsTitle": "Цвета",
+		"colors": {
+			"black": {
+				"name": "Черный",
+				"code": "000000"
+			},
+			"cherry": {
+				"name": "Вишневый",
+				"code": "d93639"
+			},
+			"grey": {
+				"name": "Серый графит",
+				"code": "9a988c"
+			}
+		},
+		"parametersTitle": "Параметры",
+		"parameters": {
+			"diameter": {
+				"value": "30 см",
+				"icon": "size"
+			},
+			"amount": {
+				"value": "8.35 л",
+				"icon": "pot"
+			}
+		},
+		"btn": {
+			"href": "javascript:void(0);",
+			"text": "О наборе"
+		}
+	}
+}

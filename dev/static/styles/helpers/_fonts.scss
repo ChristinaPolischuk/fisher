@@ -1,0 +1,19 @@
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: 
+			url(#{$path}.woff) format("woff"),
+			url(#{$path}.woff2) format("woff2"),
+			url(#{$path}.ttf) format("ttf");
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+@include font-face("Roboto-Regular", "../fonts/Roboto-Regular", 400, "normal");
+
+@include font-face("Gilroy-Light", "../fonts/Gilroy-Light", 300, "normal");
+@include font-face("Gilroy-Regular", "../fonts/Gilroy-Regular", 400, "normal");
+@include font-face("Gilroy-Medium", "../fonts/Gilroy-Medium", 500, "normal");
+@include font-face("Gilroy-SemiBold", "../fonts/Gilroy-SemiBold", 600, "normal");
+@include font-face("Gilroy-Bold", "../fonts/Gilroy-Bold", 700, "normal");

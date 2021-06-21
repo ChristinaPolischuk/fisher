@@ -1,0 +1,44 @@
+@mixin size($a, $b: false) {
+	width: $a;
+	@if $b {
+		height: $b;
+	} @else {
+		height: $a;
+	}
+}
+@mixin rem($size) {
+	font-size: #{$size/16}rem;
+}
+@mixin absolute-center() {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin absolute-x() {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin absolute-y() {
+	top: 50%;
+	transform: translateY(-50%);
+}
+@mixin absolute-all($num) {
+	position: absolute;
+	top: $num;
+	bottom: $num;
+	left: $num;
+	right: $num;
+}
+@mixin position($position, $top: null, $bottom: null, $left: null, $right: null) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin sprite-image($sprite) {
+	$sprite-image: nth($sprite, 9);
+	background-image: url(../images/pngsprite/#{$sprite-image});
+ }

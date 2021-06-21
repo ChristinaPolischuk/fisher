@@ -1,0 +1,56 @@
+{
+	"headerNavInfo": {
+		"howOrder": {
+			"title": "Как заказать",
+			"link": "javascript:void(0)",
+			"icon": "basket-full"
+		},
+		"payment": {
+			"title": "Оплата",
+			"link": "javascript:void(0)",
+			"icon": "credit-card"
+		},
+		"delivery": {
+			"title": "Доставка",
+			"link": "javascript:void(0)",
+			"icon": "delivery"
+		}
+	},
+	"headerNavConnect": {
+		"location": {
+			"title": "Киев",
+			"link": "javascript:void(0)",
+			"icon": "location-pin"
+		},
+		"login": {
+			"title": "Войти",
+			"link": "javascript:void(0)",
+			"icon": "user"
+		},
+		"register": {
+			"title": "Зарегистрироваться",
+			"link": "javascript:void(0)",
+			"icon": "register"
+		}
+	},
+	"headerNavUser": {
+		"equal": {
+			"title": "Сравнение",
+			"link": "javascript:void(0)",
+			"icon": "balance",
+			"number": "25"
+		},
+		"favourite": {
+			"title": "Избранное",
+			"link": "javascript:void(0)",
+			"icon": "heart",
+			"number": "6"
+		},
+		"basket": {
+			"title": "Корзина",
+			"link": "javascript:void(0)",
+			"icon": "basket",
+			"number": "10"
+		}
+	}
+}

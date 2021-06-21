@@ -1,0 +1,247 @@
+{
+	"product_1": {
+		"title": "Набор бокалов для вина Schott Zwiesel Vina 750 мл х 6 шт",
+		"img": "Schott_Zwiesel_Vina_750/Schott_Zwiesel_Vina_750.jpg",
+		"link": "javascript:void(0);",
+		"price": "1 614",
+		"availability": true,
+		"info": {
+			"material": {
+				"key": "Материал:",
+				"value": "Хрустальное стекло"
+			},
+			"height": {
+				"key": "Высота:",
+				"value": "22.1 см"
+			},
+			"diameter": {
+				"key": "Диаметр:",
+				"value": "11.1 см"
+			},
+			"appointment": {
+				"key": "Назначение:",
+				"value": "для вина"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	},
+	"product_2": {
+		"title": "Чайный набор на 1 чашку Chinelli",
+		"img": "Chinelli/Chinelli.jpg",
+		"link": "javascript:void(0);",
+		"price": "1 839",
+		"availability": false,
+		"info": {
+			"material": {
+				"key": "Материал:",
+				"value": "фарфор"
+			},
+			"cover": {
+				"key": "Покрытие:",
+				"value": "глазурь"
+			},
+			"country": {
+				"key": "Страна:",
+				"value": "Италия"
+			},
+			"packaging": {
+				"key": "Вид упаковки:",
+				"value": "подарочная"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	},
+	"product_3": {
+		"title": "Блендер погружной Stadler Form Blender Six SFB.555",
+		"img": "Stadler_Form_Blender_Six_SFB.555/Stadler_Form_Blender_Six_SFB.555.jpg",
+		"link": "javascript:void(0);",
+		"price": "4 299",
+		"availability": true,
+		"info": {
+			"weight": {
+				"key": "Вес:",
+				"value": "1.3 кг"
+			},
+			"count nozzle": {
+				"key": "Количество насадок:",
+				"value": "9"
+			},
+			"sound": {
+				"key": "Звуковой сигнал:",
+				"value": "нет"
+			},
+			"child": {
+				"key": "Защита от детей:",
+				"value": "есть"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	},
+	"product_4": {
+		"title": "Набор стаканов прозрачных Trinkglaser Eva Solo 8 шт 380 мл",
+		"img": "Trinkglaser_Eva_Solo/Trinkglaser_Eva_Solo.jpg",
+		"link": "javascript:void(0);",
+		"price": "2 468",
+		"availability": true,
+		"info": {
+			"material": {
+				"key": "Материал:",
+				"value": "Стекло"
+			},
+			"height": {
+				"key": "Высота:",
+				"value": "18 см"
+			},
+			"packaging": {
+				"key": "Вид упаковки:",
+				"value": "подарочная"
+			},
+			"country": {
+				"key": "Страна:",
+				"value": "Дания"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	},
+	"product_5": {
+		"title": "Стул обеденный для кухни, гостиной, кафе Betty сталь черный и ткань Monolith amazon green AMF",
+		"img": "GoodTrend/Good_Trend_1.jpg",
+		"link": "javascript:void(0);",
+		"price": "3 092",
+		"availability": true,
+		"info": {
+			"color": {
+				"key": "Цвет:",
+				"value": "зеленый"
+			},
+			"height": {
+				"key": "Высота:",
+				"value": "84 см"
+			},
+			"chair legs": {
+				"key": "Ножки:",
+				"value": "прямые"
+			},
+			"country": {
+				"key": "Страна:",
+				"value": "Украина"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	},
+	"product_6": {
+		"title": "Стол кемпинговый World Sport для туризма складной и 2стула",
+		"img": "Lucky_Mag/Lucky_Mag_1.jpg",
+		"link": "javascript:void(0);",
+		"price": "1 316",
+		"availability": false,
+		"info": {
+			"material": {
+				"key": "Материал каркаса:",
+				"value": "алюминий"
+			},
+			"weight": {
+				"key": "Максимальная нагрузка:",
+				"value": "90 кг"
+			},
+			"proportions": {
+				"key": "Размеры:",
+				"value": "65*65*65 см"
+			},
+			"equipment": {
+				"key": "Комплектация:",
+				"value": "стол+ 2 стула"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	},
+	"product_7": {
+		"title": "Кухня Модерн модуль Верх Для Сушки + сушилка для посуды",
+		"img": "HOMELINESS/HOMELINESS_1.png",
+		"link": "javascript:void(0);",
+		"price": "1 895",
+		"availability": false,
+		"info": {
+			"facade color": {
+				"key": "Цвет фасада:",
+				"value": "cиреневый"
+			},
+			"body color": {
+				"key": "Цвет корпуса:",
+				"value": "Дуб молочный"
+			},
+			"body material": {
+				"key": "Материал корпуса:",
+				"value": "Ламинированная ДСП"
+			},
+			"country": {
+				"key": "Страна:",
+				"value": "Украина"
+			}
+		},
+		"actions": {
+			"favourite": {
+				"icon": "heart",
+				"text": "В избранное"
+			},
+			"compare": {
+				"icon": "balance",
+				"text": "Сравнить"
+			}
+		}
+	}
+}

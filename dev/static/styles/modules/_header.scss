@@ -1,0 +1,76 @@
+.header {
+	padding-top: 15px;
+	@include position(absolute, $left:0, $right:0, $top: 0);
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-menu {
+		display: none;
+		@media screen and (min-width: 992px) {
+			display: block;
+		}
+		&__link {
+			@include rem(18);
+			&:not(:last-child) {
+				margin-right: 40px;
+				@media screen and (min-width: 1400px) {
+					margin-right: 64px;
+				}
+			}
+			@media screen and (min-width: 1400px) {
+				@include rem(24);
+			}
+		}
+	}
+	&-phone {
+		display: none;
+		@media screen and (min-width: 992px) {
+			display: inline-flex;
+			margin-left: 50px;
+			position: relative;
+			height: 33px;
+			padding-right: 25px;
+			align-items: center;
+			background-color: rgba($black_color, .63);
+			border-radius: 38px;
+		}
+		@media screen and (min-width: 1400px) {
+			height: 40px;
+			margin-left: 110px;
+		}
+		&::before {
+			content: '';
+			@include position(absolute, $top: 0, $left: 0, $bottom: 0);
+			@include size(33px);
+			background-color: $black_color;
+			border-radius: 38px;
+			transition: width .3s;
+			@media screen and (min-width: 1400px) {
+				@include size(40px);
+			}
+		}
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+		&__icon {
+			position: relative;
+			margin: 0 20px 0 7px;
+			@include size(20px, 17px);
+			fill: $white_color;
+			@media screen and (min-width: 1400px) {
+				@include size(24px, 22px);
+			}
+		}
+		&__text {
+			color: $white_color;
+			@include rem(18);
+			@media screen and (min-width: 1400px) {
+				@include rem(24);
+			}
+		}
+	}
+}
