@@ -76,6 +76,12 @@ function scssTocss() {
 // 	return gulp.src(['dev/static/js/libs/jquery-3.6.0.min.js'])
 // 		.pipe(gulp.dest('dist/static/js/libs'));
 // }
+
+function copyVideo() {
+	return gulp.src('dev/static/video/*.*')
+		.pipe(gulp.dest('dist/static/video/'));
+}
+
 function libs() {
 	// return gulp.src(['node_modules/slick-carousel/slick/slick.min.js', 'node_modules/svg4everybody/dist/svg4everybody.min.js'])
 	return gulp.src('node_modules/svg4everybody/dist/svg4everybody.min.js')
@@ -192,7 +198,7 @@ function watch() {
 	gulp.watch("dist/*.html").on('change', browserSync.reload);
 }
 
-const dev = gulp.parallel(fonts, images, svgSpriteBuild, pngSpriteBuild, pugToHtml, scssTocss, libs, script);
+const dev = gulp.parallel(fonts, images, svgSpriteBuild, pngSpriteBuild, pugToHtml, scssTocss, libs, script, copyVideo);
 
 exports.default = gulp.series(clean, dev, watch);
 exports.build = gulp.series(clean, setMode(true), dev);

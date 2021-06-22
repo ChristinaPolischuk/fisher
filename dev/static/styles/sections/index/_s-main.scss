@@ -1,4 +1,5 @@
 .main {
+	position: relative;
 	display: flex;
 	align-items: flex-end;
 	padding-bottom: 60px;
@@ -16,7 +17,40 @@
 	}
 	@media screen and (min-width: 1400px) {
 		display: block;
-		min-height: 100vh;
+		// min-height: 100vh;
+	}
+	&__wrap {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		@media screen and (min-width: 576px) {
+			display: flex;
+		}
+	}
+	&__video {
+		width: 100%;
+		@media screen and (min-width: 576px) {
+			margin-left: auto;
+		}
+		@media screen and (min-width: 992px) {
+			margin-top: 4%;
+			width: 29%;
+		}
+		@media screen and (min-width: 1400px) {
+			display: block;
+
+			// min-height: 100vh;
+		}
+	}
+	&__container {
+		@include position(absolute, $left: 0, $right: 0);
+		bottom: 5%;
+		@media screen and (min-width: 992px) {
+			bottom: auto;
+			top: 0;
+		}
 	}
 	&__content {
 		@media screen and (min-width: 992px) {
