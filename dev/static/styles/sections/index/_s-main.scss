@@ -2,15 +2,15 @@
 	position: relative;
 	display: flex;
 	align-items: flex-end;
-	padding-bottom: 60px;
-	min-height: 650px;
+	// padding-bottom: 60px;
+	// min-height: 650px;
 	overflow: hidden;
-	@media screen and (min-width: 480px) {
-		min-height: 800px;
-	}
-	@media screen and (min-width: 576px) {
-		min-height: 1024px;
-	}
+	// @media screen and (min-width: 480px) {
+	// 	min-height: 800px;
+	// }
+	// @media screen and (min-width: 576px) {
+	// 	min-height: 1024px;
+	// }
 	@media screen and (min-width: 992px) {
 		display: block;
 		min-height: auto;

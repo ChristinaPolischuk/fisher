@@ -1,0 +1,85 @@
+.work {
+	padding-top: 15px;
+	padding-bottom: 300px;
+	@media screen and (min-width: 360px) {
+		padding-top: 45px;
+		padding-bottom: 450px;
+	}
+	@media screen and (min-width: 480px) {
+		padding-top: 60px;
+		padding-bottom: 850px;
+	}
+	@media screen and (min-width: 576px) {
+		padding-top: 90px;
+		padding-bottom: 1100px;
+	}
+	&__content {
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		@media screen and (min-width: 360px) {
+			margin-top: 45px;
+		}
+		@media screen and (min-width: 576px) {
+			margin-top: 90px;
+		}
+	}
+	&__item {
+		display: flex;
+		max-width: 348px;
+		color: $white_color;
+		@media screen and (min-width: 480px) {
+			height: 230px;
+		}
+		@media screen and (min-width: 680px) {
+			max-width: 393px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 15px;
+			@media screen and (min-width: 360px) {
+				margin-bottom: 45px;
+			}
+			@media screen and (min-width: 480px) {
+				margin-bottom: 80px;
+			}
+			@media screen and (min-width: 576px) {
+				margin-bottom: 160px;
+			}
+		}
+		&:nth-child(odd) {
+			padding: 65px 40px 15px 15px;
+			background: url(../images/sections/work/work_bg_odd.png) 0 0/cover no-repeat;
+			@media screen and (min-width: 480px) {
+				padding: 85px 60px 15px 20px;
+			}
+		}
+		&:nth-child(even) {
+			padding: 65px 15px 15px 40px;
+			margin-left: auto;
+			background: url(../images/sections/work/work_bg_even.png) 0 0/cover no-repeat;
+			@media screen and (min-width: 480px) {
+				padding: 85px 20px 15px 60px;
+			}
+		}
+	}
+	&__number {
+		margin-right: 5px;
+		@include rem(52);
+		line-height: 1;
+		font-family: "Gilroy-Medium", Arial, sans-serif;
+		@media screen and (min-width: 480px) {
+			margin-right: 10px;
+		}
+		@media screen and (min-width: 576px) {
+			@include rem(72);
+		}
+	}
+	&__title {
+		@include rem(24);
+		margin-bottom: 5px;
+		font-family: "Gilroy-SemiBold", Arial, sans-serif;
+	}
+	&__text {
+		@include rem(14);
+	}
+}

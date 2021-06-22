@@ -46,12 +46,12 @@ button {
 }
 
 .wrapper {
-	background: url(../images/general/site_bg_mobile.png)  0 0/cover no-repeat;
+	background: url(../images/general/site_bg_mobile.png)  0 0/100% auto no-repeat;
 	@media screen and (min-width: 992px) {
-		background: url(../images/general/site_bg_laptop.png)  0 0/cover no-repeat;
+		background: url(../images/general/site_bg_laptop.png)  0 0/100% auto no-repeat;
 	}
 	@media screen and (min-width: 1400px) {
-		background: url(../images/general/site_bg_desktop.png)  0 0/cover no-repeat;
+		background: url(../images/general/site_bg_desktop.png)  0 0/100% auto no-repeat;
 	}
 }
 
@@ -70,10 +70,16 @@ button {
 .section {
 	&-title {
 		color: $white_color;
-		@include rem(36);
+		@include rem(26);
 		// font-family: "Gilroy-Medium", Arial, sans-serif;
 		text-align: center;
 		overflow: hidden;
+		@media screen and (min-width: 576px) {
+			@include rem(36);
+		}
+		@media screen and (min-width: 992px) {
+			@include rem(48);
+		}
 		&::before, &::after {
 			content: '';
 			display: inline-block;

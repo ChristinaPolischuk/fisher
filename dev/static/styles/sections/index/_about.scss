@@ -1,19 +1,29 @@
 .about {
-	padding-top: 60px;
-	background: url(../images/sections/about_animation.png) left 45%/80% no-repeat;
+	background: url(../images/sections/about_animation.png) left 40%/80% no-repeat;
 	@media screen and (min-width: 360px) {
+		padding-top: 30px;
+	}
+	@media screen and (min-width: 480px) {
+		padding-top: 60px;
 		background: url(../images/sections/about_animation.png) left center/80% no-repeat;
 	}
+	@media screen and (min-width: 576px) {
+		padding-top: 120px;
+		background: url(../images/sections/about_animation.png) left 60%/80% no-repeat;
+	}
 	@media screen and (min-width: 992px) {
-		padding-top: 60px;
-		
 		background: url(../images/sections/about_animation.png) left 40%/50% no-repeat;
 	}
 	@media screen and (min-width: 1400px) {
 		background: url(../images/sections/about_animation.png) left 40%/30% no-repeat;
 	}
 	&__content {
+		margin-top: 10px;
+		@media screen and (min-width: 480px) {
+			margin-top: 30px;
+		}
 		@media screen and (min-width: 992px) {
+			margin-top: 0;
 			display: flex;
 			justify-content: space-between;
 			margin-top: 350px;
@@ -23,16 +33,17 @@
 		@include rem(24);
 		color: $white_color;
 		&:first-child {
-			margin-top: 30px;
 			@media screen and (min-width: 992px) {
 				width: 40%;
 				order: 2;
 				margin-left: 30px;
-				margin-top: 0;
 			}
 		}
 		&:last-child {
-			margin-top: 140px;
+			margin-top: 60px;
+			@media screen and (min-width: 480px) {
+				margin-top: 140px;
+			}
 			@media screen and (min-width: 992px) {
 				margin-top: 0;
 				order: 1;
