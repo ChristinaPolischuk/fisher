@@ -23,6 +23,9 @@
 		@media screen and (min-width: 576px) {
 			margin-top: 90px;
 		}
+		@media screen and (min-width: 992px) {
+			flex-direction: column;
+		}
 	}
 	&__item {
 		display: flex;
@@ -44,6 +47,9 @@
 			}
 			@media screen and (min-width: 576px) {
 				margin-bottom: 160px;
+			}
+			@media screen and (min-width: 992px) {
+				margin-bottom: 0;
 			}
 		}
 		&:nth-child(odd) {
