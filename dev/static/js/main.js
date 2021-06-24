@@ -1,18 +1,16 @@
 ;
-const registerVideo = (bound, video) => {
-	bound = document.querySelector(bound);
-	video = document.querySelector(video);
-	const scrollVideo = () => {
-		if (video.duration) {
-			const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
-			const rawPercentScrolled = (window.scrollY - distanceFromTop) / (bound.scrollHeight - window.innerHeight);
-			const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+// initialise ScrollMagic controller
+var controller = new ScrollMagic.Controller();
 
-			video.currentTime = video.duration * percentScrolled;
-		}
-		requestAnimationFrame(scrollVideo);
-	}
-	requestAnimationFrame(scrollVideo);
-}
+// create Tween
+var tween = TweenMax.to("#js-animation", 1.0, {
+	backgroundPosition: "0 100%",
+	ease: SteppedEase.config(31)
+})
 
-registerVideo(".main", ".main__video");
+// build scene
+var scene = new ScrollMagic.Scene({ duration: 3000 })
+	.triggerHook("onCenter")
+	.setPin("#js-pinned")
+	.setTween(tween)
+	.addTo(controller);

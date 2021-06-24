@@ -1,21 +1,13 @@
 .about {
-	background: url(../images/sections/about_animation.png) left 40%/80% no-repeat;
+	position: relative;
 	@media screen and (min-width: 360px) {
 		padding-top: 30px;
 	}
 	@media screen and (min-width: 480px) {
 		padding-top: 60px;
-		background: url(../images/sections/about_animation.png) left center/80% no-repeat;
 	}
 	@media screen and (min-width: 576px) {
 		padding-top: 120px;
-		background: url(../images/sections/about_animation.png) left 60%/80% no-repeat;
-	}
-	@media screen and (min-width: 992px) {
-		background: url(../images/sections/about_animation.png) left 40%/50% no-repeat;
-	}
-	@media screen and (min-width: 1400px) {
-		background: url(../images/sections/about_animation.png) left 40%/30% no-repeat;
 	}
 	&__content {
 		margin-top: 10px;

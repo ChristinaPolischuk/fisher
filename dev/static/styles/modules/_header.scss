@@ -67,6 +67,7 @@
 			}
 		}
 		&__text {
+			position: relative;
 			color: $white_color;
 			@include rem(18);
 			@media screen and (min-width: 1400px) {

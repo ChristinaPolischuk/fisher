@@ -2,9 +2,11 @@
 	position: relative;
 	display: flex;
 	align-items: flex-end;
+	min-height: 100vh;
 	// padding-bottom: 60px;
 	// min-height: 650px;
 	overflow: hidden;
+	border: 2px solid blue;
 	// @media screen and (min-width: 480px) {
 	// 	min-height: 800px;
 	// }
@@ -19,38 +21,15 @@
 		display: block;
 		// min-height: 100vh;
 	}
-	&__wrap {
-		position: sticky;
+	&__animation {
+		position: absolute;
 		top: 0;
-		left: 0;
 		right: 0;
+		max-width: 576px;
 		width: 100%;
-		@media screen and (min-width: 576px) {
-			display: flex;
-		}
-	}
-	&__video {
-		width: 100%;
-		@media screen and (min-width: 576px) {
-			margin-left: auto;
-		}
-		@media screen and (min-width: 992px) {
-			margin-top: 4%;
-			width: 29%;
-		}
-		@media screen and (min-width: 1400px) {
-			display: block;
-
-			// min-height: 100vh;
-		}
-	}
-	&__container {
-		@include position(absolute, $left: 0, $right: 0);
-		bottom: 5%;
-		@media screen and (min-width: 992px) {
-			bottom: auto;
-			top: 0;
-		}
+		height: 100%;
+		border: 2px solid red;
+		background: url(../images/imgsprite/main.png) 0 0/100% no-repeat;
 	}
 	&__content {
 		@media screen and (min-width: 992px) {
@@ -126,8 +105,4 @@
 			}
 		}
 	}
-}
-@keyframes play {
-   from { background-position:    0px 0px; }
-     to { background-position: 0px -31744px; }
 }

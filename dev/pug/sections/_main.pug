@@ -1,14 +1,11 @@
-main.main
-	.main__wrap 
-		video.main__video(muted preload)
-			source(src="static/video/first-section.mp4" type="video/mp4")
-			p Your user agent does not support the HTML5 Video element.
-		.main__container.container 
-			.main__content
-				h1.main-title Развиваем бизнесы и бренды онлайн
-				.main-contacts 
-					button.btn Написать нам
-					a.main-contacts__link(href="")
-						+icon('phone', 'main-contacts__icon')
-					a.main-contacts__link(href="") 
-						+icon('mail', 'main-contacts__icon')
+main.main#js-pinned
+	.main__animation#js-animation
+	.main__container.container 
+		.main__content
+			h1.main-title Развиваем бизнесы и бренды онлайн
+			.main-contacts 
+				button.btn Написать нам
+				a.main-contacts__link(href="")
+					+icon('phone', 'main-contacts__icon')
+				a.main-contacts__link(href="") 
+					+icon('mail', 'main-contacts__icon')

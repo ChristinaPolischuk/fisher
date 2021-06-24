@@ -25,7 +25,8 @@ const fs = require('fs');
 const spriteSmith = require('gulp.spritesmith');
 const buffer = require('vinyl-buffer');
 const merge = require('merge-stream');
-const gm = require('gulp-gm');
+const gm = require('gulp-gm'); //не используется
+// const Glob = require("glob").Glob;
 
 let isBuildFlag = false;
 
@@ -84,7 +85,7 @@ function copyVideo() {
 
 function libs() {
 	// return gulp.src(['node_modules/slick-carousel/slick/slick.min.js', 'node_modules/svg4everybody/dist/svg4everybody.min.js'])
-	return gulp.src('node_modules/svg4everybody/dist/svg4everybody.min.js')
+	return gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js', 'dev/static/js/libs/TweenMax.js', 'dev/static/js/libs/ScrollMagic.js', 'dev/static/js/libs/animation.gsap.js'])
 		.pipe(gulpConcat('libs.js'))
 		.pipe(gulp.dest('dist/static/js/libs'));
 }
@@ -114,7 +115,11 @@ function images() {
 				]
 			})
 		]))
-		.pipe(gulp.dest('dist/static/images'))
+		.pipe(gulp.dest('dist/static/images'));
+}
+
+function imagesWebp() {
+	return gulp.src(['dev/static/images/**/*.{jpg,gif,png,svg}', '!dev/static/images/svgsprite/*', '!dev/static/images/pngsprite/*', '!dev/static/images/imgsprite/*'])
 		.pipe(gulpWebp({
 			quality: 70
 		}))
@@ -190,7 +195,8 @@ function watch() {
 	});
 
 	gulp.watch("dev/pug/**/*.pug", pugToHtml);
-	gulp.watch(["dev/static/images/**/*.{jpg,gif,png,svg}", "!dev/static/images/sprite/*"], images);
+	gulp.watch(["dev/static/images/**/*.{jpg,gif,png,svg}", "!dev/static/images/svgsprite/*"], images);
+	// gulp.watch(["dev/static/images/**/*.{jpg,gif,png,svg}", "!dev/static/images/svgsprite/*", "!dev/static/images/pngsprite/*", "!dev/static/images/imgsprite/*"], imagesWebp);
 	gulp.watch("dev/static/images/svgsprite/*.svg", svgSpriteBuild);
 	gulp.watch("dev/static/images/pngsprite/*.png", pngSpriteBuild);
 	gulp.watch("dev/static/js/main.js", script);
